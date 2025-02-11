@@ -1,13 +1,16 @@
-import { Group } from "@mantine/core"
+import { Group, Tooltip } from "@mantine/core"
 import classes from './Left.module.css'
-import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
+import {
+  IconBrandGithub,
+  IconBrandLinkedin,
+} from '@tabler/icons-react'
 
 
 export function SocialLinks() {
 
   const socialLinks = [
     {
-      name: 'Github',
+      name: 'GitHub',
       url: 'https://github.com/jackkieny',
       icon: IconBrandGithub,
       primaryColor: '#8931b2',
@@ -25,16 +28,18 @@ export function SocialLinks() {
   return (
     <Group gap={1}>
       {socialLinks.map((link, index) => (
-        <a
-          key={index}
-          href={link.url}
-          target='_blank'
-          rel='noreferrer'
-          className={classes.sociallink}
-          style={{ '--hover-color': link.secondaryColor } as React.CSSProperties}
-        >
-          <link.icon size={40} color={link.primaryColor} />
-        </a>
+        <Tooltip key={index} label={link.name} position='top' withArrow>
+          <a
+            key={index}
+            href={link.url}
+            target='_blank'
+            rel='noreferrer'
+            className={classes.sociallink}
+            style={{ '--hover-color': link.secondaryColor } as React.CSSProperties}
+          >
+            <link.icon size={40} color={link.primaryColor} />
+          </a>
+        </Tooltip>
       ))}
     </Group>
   )
