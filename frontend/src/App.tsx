@@ -10,17 +10,25 @@ function App() {
     <MantineProvider>
       <div className={classes.container}>
         <Group
-          justify='center'
+          justify='space-between'
           align='flex-start'
-          w="80%"
+          w="60%"
           className={classes.content}>
+
           {/* Left - Header */}
-          <Flex align='center' w="40%" h="50%" direction='column' >
+          <Flex
+            align='center'
+            w="20%"
+            direction='column'
+          >
             <Left />
           </Flex>
 
           {/* Right - Main */}
-          <Group justify='flex-start' w="50%">
+          <Group
+            justify='flex-start'
+            w="60%"
+          >
             <Right />
           </Group>
         </Group>
