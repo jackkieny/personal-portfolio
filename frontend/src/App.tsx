@@ -1,6 +1,7 @@
 import { createTheme, MantineProvider } from '@mantine/core'
 import { Left } from './components/left/Left'
 import { Right } from './components/right/Right'
+import { MantineRef } from './components/mantineref/MantineRef'
 import classes from './app.module.css'
 import '@mantine/core/styles.css'
 
@@ -25,6 +26,9 @@ function App() {
           <div className={classes.right}>
             <Right/>
           </div>
+        </div>
+        <div className={classes.mantine}>
+          <MantineRef/>
         </div>
       </div>
     </MantineProvider>

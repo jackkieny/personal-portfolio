@@ -20,8 +20,16 @@
 
 .right {
     position: relative;
-    width: 40%;
+    width: 30%;
     top: 6rem;
-    left: 70%;
+    left: 65%;
     transform: translateX(-50%);
+}
+
+.mantine {
+    display: grid;
+    place-items: center;
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
 }

@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon {
+  color: whitesmoke;
+  height: 2rem;
+  width: auto;
+  opacity: 0.2;
+  transition:
+    opacity 0.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+    transform 0.75s cubic-bezier(0.25, 0.1, 0.25, 1),
+    height 0.5s cubic-bezier(0.25, 0.1, 0.25, 1),
+    width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+
+.icon:hover {
+  opacity: 1;
+  transform: rotate(360deg);
+  height: 3rem;
+  cursor: pointer;
+}
+
+.text {
+  margin-left: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.icon:hover + .text {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.container:not(:hover) .text {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.link, .link:visited {
+  color: whitesmoke;
+  text-decoration: none;
+}
