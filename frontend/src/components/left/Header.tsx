@@ -1,17 +1,14 @@
 import {
   Flex,
-  Title,
-  Text,
 } from '@mantine/core'
+import classes from './Left.module.css'
 
 export function Header() {
   return (
     <Flex direction='column'>
-      <Title order={1} lh={2}>Jack Kieny</Title>
-      <Text size="lg" lh={1.5}>Software Engineer</Text>
-      <Text size='sm' lh={1.5}>
-        I build things I think are cool
-      </Text>
+      <h1 className={classes.title}>Jack Kieny</h1>
+      <h3 className={classes.subtitle}>Software Engineer</h3>
+      <p>I build things I think are cool.</p>
     </Flex>
   )
 }

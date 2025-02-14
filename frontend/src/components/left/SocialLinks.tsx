@@ -8,20 +8,23 @@ import {
 
 export function SocialLinks() {
 
-  const socialLinks = [
+  const socialLinks: {
+    name: string;
+    url: string;
+    icon: React.ElementType;
+    primaryColor: string;
+  }[] = [
     {
       name: 'GitHub',
       url: 'https://github.com/jackkieny',
       icon: IconBrandGithub,
-      primaryColor: '#8931b2',
-      secondaryColor: '#e7d6fb'
+      primaryColor: 'mantine-colors-purple-9',
     },
     {
       name: 'LinkedIn',
       url: 'https://linkedin.com/in/jackkieny',
       icon: IconBrandLinkedin,
-      primaryColor: '#1d72fe',
-      secondaryColor: '#cde2ff'
+      primaryColor: 'mantine-colors-blue-6',
     },
   ]
 
@@ -35,9 +38,8 @@ export function SocialLinks() {
             target='_blank'
             rel='noreferrer'
             className={classes.sociallink}
-            style={{ '--hover-color': link.secondaryColor } as React.CSSProperties}
           >
-            <link.icon size={40} color={link.primaryColor} />
+            <link.icon size={40} style={{ color: link.primaryColor }} />
           </a>
         </Tooltip>
       ))}

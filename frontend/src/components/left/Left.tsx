@@ -10,6 +10,8 @@ export function Left() {
         direction="column"
         align="flex-start"
         justify="space-between"
+        w="100%"
+        h={700}
         className={classes.flexdiv}
       >
         <Group>
