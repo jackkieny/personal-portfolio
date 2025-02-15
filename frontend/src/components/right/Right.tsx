@@ -1,10 +1,14 @@
-import {} from "@mantine/core"
-import classes from './Right.module.css'
+import classes from './styles/Right.module.css'
+import { Summary } from './Summary'
+// import { Experience } from './Experience'
+// import { Projects } from './Projects'
 
 export function Right() {
   return (
     <div className={classes.container}>
-      <h1>Right</h1>
+      <Summary />
+      {/* <Experience /> */}
+      {/* <Projects /> */}
     </div>
   )
 }
