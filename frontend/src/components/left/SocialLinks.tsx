@@ -18,13 +18,13 @@ export function SocialLinks() {
       name: 'GitHub',
       url: 'https://github.com/jackkieny',
       icon: IconBrandGithub,
-      primaryColor: 'mantine-colors-purple-9',
+      primaryColor: '#800080',
     },
     {
       name: 'LinkedIn',
       url: 'https://linkedin.com/in/jackkieny',
       icon: IconBrandLinkedin,
-      primaryColor: 'mantine-colors-blue-6',
+      primaryColor: '#0a66c2',
     },
   ]
 
