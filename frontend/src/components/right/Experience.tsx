@@ -15,7 +15,7 @@ export function Experience() {
           </Flex>
 
           <Flex className={classes.right} direction='column' w="75%">
-            <Text fz={18} fw={700}>{exp.position}</Text>
+            <Text fz={18} fw={700}>{exp.position} <IconArrowUpRight size={16} className={classes.icon}/></Text>
             <Text fz={16} c="dimmed">{exp.company}</Text>
             <Text fz={14}>{exp.description}</Text>
             <Flex gap={10} m={10}>

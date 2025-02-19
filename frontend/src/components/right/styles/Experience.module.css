@@ -2,7 +2,6 @@
     margin-top: 5rem;
     width: 100%;
     height: auto;
-    /* border: 1px solid red; */
 }
 
 .paper {
@@ -20,7 +19,6 @@
 }
 
 .inner {
-    /* border: 1px solid orange; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,4 +66,10 @@
 
 .link:hover {
     cursor: pointer;
+}
+
+.paper:hover .icon {
+    color: #3aaefe;
+    transform: scale(1.5);
+    transition: transform 0.4s ease, color 0.2s ease;
 }
