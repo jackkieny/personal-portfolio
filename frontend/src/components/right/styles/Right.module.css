@@ -1,8 +1,9 @@
 .container {
-    /* border: 1px solid lightgray; */
+    /* border: 1px solid lightgray;  */
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
     height: auto;
+    /* overflow-y: visible; */
 }
