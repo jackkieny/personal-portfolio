@@ -7,7 +7,16 @@ export function Experience() {
 
   const ExpList = experience.map((exp, idx) => {
     return (
-      <Flex key={idx} mb={25} p={10} className={classes.paper}>
+      <Flex
+        key={idx}
+        mb={25}
+        p={10}
+        className={classes.paper}
+        onMouseDown={(e) => {
+          e.preventDefault();
+          window.open(exp.link, '_blank')
+        }}
+      >
         <Flex align='start' gap='md' className={classes.inner}>
 
           <Flex className={classes.left} w="25%">
@@ -15,7 +24,7 @@ export function Experience() {
           </Flex>
 
           <Flex className={classes.right} direction='column' w="75%">
-            <Text fz={18} fw={700}>{exp.position} <IconArrowUpRight size={16} className={classes.icon}/></Text>
+            <Text fz={18} fw={700}>{exp.position} <IconArrowUpRight size={16} className={classes.icon} /></Text>
             <Text fz={16} c="dimmed">{exp.company}</Text>
             <Text fz={14}>{exp.description}</Text>
             <Flex gap={10} m={10}>
@@ -40,8 +49,8 @@ export function Experience() {
   return (
     <div className={classes.container}>
       {ExpList}
-      <Flex gap={20} justify='flex-start'>
-        <Text fz={16} mb={200}>
+      <Flex gap={20} justify='flex-start' mb={50}>
+        <Text fz={16} className={classes.links}>
           <a
             href="/resume.pdf"
             target="_blank"
@@ -49,9 +58,9 @@ export function Experience() {
             className={classes.link}
           >View Full Résumé
           </a>
-          <IconArrowUpRight size={20} />
+          <IconArrowUpRight size={16} className={classes.icon}/>
         </Text>
-        <Text fz={16} mb={200}>
+        <Text fz={16} className={classes.links}>
           <a
             href="https://www.linkedin.com/in/jackkieny/details/experience/"
             target="_blank"
@@ -59,7 +68,7 @@ export function Experience() {
             className={classes.link}
           >View Full Work History
           </a>
-          <IconArrowUpRight size={20} />
+          <IconArrowUpRight size={16} className={classes.icon} />
         </Text>
       </Flex>
     </div>

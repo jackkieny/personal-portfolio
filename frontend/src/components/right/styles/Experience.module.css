@@ -68,8 +68,12 @@
     cursor: pointer;
 }
 
-.paper:hover .icon {
+.paper:hover .icon, .links:hover .icon {
     color: #3aaefe;
     transform: scale(1.5);
-    transition: transform 0.4s ease, color 0.2s ease;
+    transition: transform 0.5s ease, color 0.2s ease;
+}
+
+.links .icon {
+    margin-left: 0.5rem;
 }
