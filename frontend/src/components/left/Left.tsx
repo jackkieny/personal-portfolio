@@ -11,7 +11,6 @@ export function Left() {
         align="flex-start"
         justify="space-between"
         w="100%"
-        h={700}
         className={classes.flexdiv}
       >
         <Group>

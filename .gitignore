@@ -9,6 +9,7 @@
 /tmp
 .env
 .air.toml
+*.sh
 
 # production
 /frontend/dist

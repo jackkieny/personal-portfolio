@@ -40,40 +40,8 @@
     color: white;
 }
 
-.link, .link:visited {
-    color: inherit;
-    text-decoration: none;
-    position: relative;
-}
-
-.link::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: -1px;
-    left: 0;
-    background-color: rgba(255, 255, 255, 1);
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-}
-
-.link:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.link:hover {
-    cursor: pointer;
-}
-
-.paper:hover .icon, .links:hover .icon {
+.paper:hover .icon {
     color: #3aaefe;
     transform: scale(1.5);
     transition: transform 0.5s ease, color 0.2s ease;
-}
-
-.links .icon {
-    margin-left: 0.5rem;
 }
