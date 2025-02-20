@@ -1,0 +1,47 @@
+.container {
+    margin-top: 5rem;
+    width: 100%;
+    height: auto;
+}
+
+.paper {
+    user-select: none;
+    cursor: pointer;
+    color: white;
+    background-color: none;
+    border-radius: 10px;
+    transition: background 0.5s ease, box-shadow 0.5s ease;
+}
+
+.paper:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 3px 3px 0 rgba(255, 255, 255, 0.3);
+}
+
+.inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.left {
+    width: 30%;
+    height: 100%;
+}
+
+.right {
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+
+.pill {
+    color: white;
+}
+
+.paper:hover .icon {
+    color: #3aaefe;
+    transform: scale(1.5);
+    transition: transform 0.5s ease, color 0.2s ease;
+}
