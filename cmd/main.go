@@ -15,7 +15,7 @@ func SetupServer(app *fiber.App) {
 	app.Get("/*", func(c *fiber.Ctx) error {
 		/*** CHANGE ME BEFORE PRODUCTION ***/
 		// return c.SendString("Hello, World!")
-		return c.SendFile("./fe/index.html")
+		return c.SendFile("./frontend/dist/index.html")
 	})
 }
 
