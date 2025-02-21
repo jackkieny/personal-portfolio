@@ -5,7 +5,7 @@ import { Projects } from './Projects'
 
 export function Right() {
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id='about'>
       <Summary />
       <Experience /> 
       <Projects />

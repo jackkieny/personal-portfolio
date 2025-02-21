@@ -1,6 +1,7 @@
 import { Flex, Group } from "@mantine/core";
-import classes from './Left.module.css'
+import classes from './styles/Left.module.css'
 import { Header } from "./Header";
+import { Legend } from "./Legend";
 import { SocialLinks } from "./SocialLinks";
 
 export function Left() {
@@ -15,7 +16,9 @@ export function Left() {
       >
         <Group>
           <Header />
-          {/* Legend/Navbar */}
+        </Group>
+        <Group>
+          <Legend />
         </Group>
         <Group>
           <SocialLinks />

@@ -1,5 +1,5 @@
 import { Group, Tooltip } from "@mantine/core"
-import classes from './Left.module.css'
+import classes from './styles/Left.module.css'
 import {
   IconBrandGithub,
   IconBrandLinkedin,

@@ -1,7 +1,7 @@
 import {
   Flex,
 } from '@mantine/core'
-import classes from './Left.module.css'
+import classes from './styles/Left.module.css'
 
 export function Header() {
   return (

@@ -47,7 +47,7 @@ export function Experience() {
   })
 
   return (
-    <div className={classes.container}>
+    <div className={classes.container} id='experience'>
       {ExpList}
       <Flex gap={20} justify='flex-start' mb={50}>
         <Text fz={16} className={classes.links}>

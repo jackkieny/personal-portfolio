@@ -1,0 +1,10 @@
+.link, .link:visited {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    position: relative;
+
+}
+
+.link:hover {
+    color: rgba(255, 255, 255, 1);
+}
