@@ -23,5 +23,5 @@ jobs:
 
       - name: Tag and Push to Docker Hub
         run: |
-          docker tag personal-portfolio:latest ${{ secrets.DOCKER_USERNAME }}/personal-portfolio:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/personal-portfolio:latest
+          docker tag personal-portfolio:latest jackkieny/personal-portfolio:latest
+          docker push jackkieny/personal-portfolio:latest
