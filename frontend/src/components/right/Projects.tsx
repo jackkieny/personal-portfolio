@@ -8,6 +8,7 @@ export function Projects() {
   const ProjectsList = projects.map((proj, idx) => {
     return (
       <Flex
+        id='projects'
         key={idx}
         mb={25}
         p={10}
