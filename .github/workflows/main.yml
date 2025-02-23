@@ -15,20 +15,17 @@ jobs:
           sudo apt-get update
           sudo apt-get install openssh-client -y
 
-      - name: Copy SSH Key
-        env: 
+      - name: Deploy to Server
+        env:
           DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY}}
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
-          echo "${DEPLOY_KEY}" > deploy_key
+          echo "$DEPLOY_KEY" > deploy_key
           chmod 600 deploy_key
-
-      - name: Deploy
           ssh -i deploy_key -o StrictHostKeyChecking=no $DEPLOY_SERVER << 'EOF'
             docker pull jackkieny/personal-portfolio:latest
           EOF
+
           #docker stop personal-portfolio || true
           #docker rm personal-portfolio || true
           #docker run -d --name personal-portfolio -p 3000:3000 jackkieny/personal-portfolio:latest
-
-
