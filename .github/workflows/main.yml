@@ -6,26 +6,24 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to Linode
     runs-on: ubuntu-latest
 
     steps:
-      - name: Install SSH
-        run: |
-          sudo apt-get update
-          sudo apt-get install openssh-client -y
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-      - name: Deploy to Server
+      - name: Setup SSH
         env:
           DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
-          echo "$DEPLOY_KEY" > deploy_key
-          chmod 600 deploy_key
-          ssh -i deploy_key -o StrictHostKeyChecking=no $DEPLOY_SERVER << 'EOF'
-            docker pull jackkieny/personal-portfolio:latest
-          EOF
+          mkdir -p ~/.ssh
+          echo "$DEPLOY_KEY" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
 
-          #docker stop personal-portfolio || true
-          #docker rm personal-portfolio || true
-          #docker run -d --name personal-portfolio -p 3000:3000 jackkieny/personal-portfolio:latest
+          echo "Host *" > ~/.ssh/config
+          echo "  StrictHostKeyChecking no" >> ~/.ssh/config
+          echo "  UserKnownHostsFile=/dev/null" >> ~/.ssh/config
+
+          ssh -i ~/.ssh/id_rsa $DEPLOY_SERVER 
+
