@@ -26,7 +26,6 @@ jobs:
           echo "  StrictHostKeyChecking no" >> ~/.ssh/config
           echo "  UserKnownHostsFile=/dev/null" >> ~/.ssh/config
 
-          ssh -i ~/.ssh/id_rsa $HOST@$DEPLOY_SERVER << 'EOF'
+          ssh -i ~/.ssh/id_rsa $USER@$HOST << 'EOF'
             docker pull jackkieny/personal-portfolio:latest
           EOF
-
