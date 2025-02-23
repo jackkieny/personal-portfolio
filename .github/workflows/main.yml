@@ -14,7 +14,8 @@ jobs:
 
       - name: Setup SSH
         env:
-          DEPLOY_SERVER: ${{ secrets.DEPLOY_SERVER }}
+          USER: deploy
+          HOST: ${{ secrets.DEPLOY_SERVER }}
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
           mkdir -p ~/.ssh
@@ -25,5 +26,7 @@ jobs:
           echo "  StrictHostKeyChecking no" >> ~/.ssh/config
           echo "  UserKnownHostsFile=/dev/null" >> ~/.ssh/config
 
-          ssh -i ~/.ssh/id_rsa $DEPLOY_SERVER 
+          ssh -i ~/.ssh/id_rsa $HOST@$DEPLOY_SERVER << 'EOF'
+            docker pull jackkieny/personal-portfolio:latest
+          EOF
 
