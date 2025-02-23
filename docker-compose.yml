@@ -1,0 +1,14 @@
+version: '3.8'
+
+services:
+  app:
+    image: jackkieny/personal-portfolio:latest
+    ports:
+      - "80:5000"
+      - "443:5000"
+    deploy:
+      restart_policy:
+        condition: always
+      update_config:
+        order: start-first
+      pull_policy: always
