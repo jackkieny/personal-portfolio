@@ -1,16 +1,17 @@
 .content {
     margin-top: 5rem;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.8);
     font-size: 1rem;
     line-height: 1.5rem;
 }
 
 .highlight {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
+    font-weight: 500;
 }
 
 .link, .link:visited {
-    color: rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 1);
     text-decoration: none;
     position: relative;
 }
