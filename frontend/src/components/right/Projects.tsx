@@ -33,7 +33,7 @@ export function Projects() {
 
           <Flex className={classes.right} direction='column' w="75%">
             <Text fz={18} fw={700}>{proj.name} <IconArrowUpRight size={16} className={classes.icon} /></Text>
-            <Text fz={14} c="dimmed">{proj.description}</Text>
+            <Text fz={14}>{proj.description}</Text>
             <Flex gap={10} m={10}>
               {proj.tools.map((tool, idx) => {
                 return (
