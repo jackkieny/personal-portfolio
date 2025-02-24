@@ -9,10 +9,13 @@
 }
 
 .content {
+    background: url('https://i.ibb.co/k2hS6KP/box-bg.png');
+    background-repeat: repeat;
     display: flex;
     justify-content: center;
     width: 100%;
     flex-grow: 1;
+    z-index: 2;
 }
 
 .left {
@@ -33,4 +36,18 @@
     position: fixed;
     bottom: 1rem;
     left: 1rem;
+}
+
+.mouse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: auto;
+    bottom: auto;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    background: var(--mantine-color-blue-9);
+    border-radius: 300px;
+    filter: blur(100px);
 }
