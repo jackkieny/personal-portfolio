@@ -13,7 +13,7 @@ export function Summary() {
 
       <p>
         I am currently seeking a full-time role in the software engineering field.
-        I am deeply motivated by the potential of software to {" "}
+        I am highly motivated by the potential of software to {" "}
         <span className={classes.highlight}>solve real-world problems</span>.
         I thrive in collaborative environments where I can work alongside
         other talented individuals to {" "}
