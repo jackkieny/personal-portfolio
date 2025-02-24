@@ -28,7 +28,7 @@ export function Summary() {
         <span className={classes.highlight}>
           <a
             className={classes.link}
-            href="#"
+            href="#experience"
             target="_parent"
             rel="noreferrer"
           >
