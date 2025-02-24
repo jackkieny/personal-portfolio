@@ -19,8 +19,6 @@ jobs:
 
       - name: Setup SSH
         env:
-          USER: deploy
-          HOST: ${{ secrets.DEPLOY_SERVER }}
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
         run: |
           mkdir -p ~/.ssh
@@ -32,6 +30,9 @@ jobs:
           echo "  UserKnownHostsFile=/dev/null" >> ~/.ssh/config
 
       - name: Deploy
+        env:
+          USER: deploy
+          HOST: ${{ secrets.DEPLOY_SERVER }}
         run: |
           ssh -i ~/.ssh/id_rsa $USER@$HOST << 'EOF'
             docker-compose down
