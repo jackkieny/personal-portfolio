@@ -9,6 +9,8 @@
 }
 
 .content {
+    background: url('https://i.ibb.co/k2hS6KP/box-bg.png');
+    background-repeat: repeat;
     display: flex;
     justify-content: center;
     width: 100%;
