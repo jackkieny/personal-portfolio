@@ -10,5 +10,11 @@ export default defineConfig({
         changeOrigin: true,
       }
     }
+  },
+  build: {
+    outDir: 'dist',
+    rollupOptions: {
+      input: '/index.html'
+    }
   }
 })
