@@ -19,8 +19,8 @@ function InitMouseGlow() {
   const circle = document.getElementById('mouseglow');
   const onMouseMove = (e: any) => {
     if (circle) {
-      let centerX = e.pageX - (circle.offsetWidth / 2);
-      let centerY = e.pageY - (circle.offsetHeight / 2);
+      const centerX = e.pageX - (circle.offsetWidth / 2);
+      const centerY = e.pageY - (circle.offsetHeight / 2);
       circle.style.left = centerX + 'px';
       circle.style.top = centerY + 'px';
     }
@@ -34,6 +34,7 @@ function InitMouseGlow() {
 
 function App() {
   useEffect(() => {
+    fetch('/api/hello');
     const cleanup = InitMouseGlow();
     return cleanup;
   }, []);
@@ -43,14 +44,14 @@ function App() {
       <div className={classes.container}>
         <div className={classes.content}>
           <div className={classes.left}>
-            <Left/>
+            <Left />
           </div>
           <div className={classes.right}>
-            <Right/>
+            <Right />
           </div>
         </div>
         <div className={classes.mantine}>
-          <MantineRef/>
+          <MantineRef />
         </div>
         <div id="mouseglow" className={classes.mouse}></div>
       </div>
