@@ -14,6 +14,7 @@ I took inspiration for this portfoilo from multiple different sources. I've trie
 | React Component Library | Mantine|  [https://mantine.dev/](https://mantine.dev/) |
 | Site Design & Layout | Brittany Chiang | [https://brittanychiang.com/](https://brittanychiang.com/) |
 | Background & Mouse Hover Effect | MyCodeMagic | [https://codepen.io/mycodemagic/pen/gOZGarP](https://codepen.io/mycodemagic/pen/gOZGarP) |
+| Tech Stack Icons | DEVICON | [https://devicon.dev/](https://devicon.dev/) |
 
 ---
 *This document is subject to update.*
