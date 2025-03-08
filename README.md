@@ -16,4 +16,4 @@ I took inspiration for this portfoilo from multiple different sources. I've trie
 | Background & Mouse Hover Effect | MyCodeMagic | [https://codepen.io/mycodemagic/pen/gOZGarP](https://codepen.io/mycodemagic/pen/gOZGarP) |
 
 ---
-This document is subject to update.
+*This document is subject to update.*
