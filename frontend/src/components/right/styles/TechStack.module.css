@@ -1,0 +1,11 @@
+.card {
+    color: white;
+    background-color: transparent;
+    border-radius: 10px;
+    user-select: none;
+    transition: background 0.3s ease-in-out;
+}
+
+.card:hover {
+    background: rgba(255, 255, 255, 0.1);
+}

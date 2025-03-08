@@ -1,7 +1,7 @@
 import { Flex, Group } from "@mantine/core";
 import classes from './styles/Left.module.css'
-import { Header } from "./Header";
-import { SocialLinks } from "./SocialLinks";
+import { Header } from './Header.tsx';
+import { SocialLinks } from './SocialLinks.tsx';
 
 export function Left() {
   return (

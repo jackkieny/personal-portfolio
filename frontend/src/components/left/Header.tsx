@@ -1,6 +1,6 @@
 import { Flex, Group } from '@mantine/core'
 import classes from './styles/Left.module.css'
-import { Legend } from './Legend'
+import { Legend } from './Legend.tsx'
 
 export function Header() {
   return (

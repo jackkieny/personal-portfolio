@@ -1,6 +1,6 @@
 import { createTheme, MantineProvider } from '@mantine/core';
-import { Left } from './components/left/Left';
-import { Right } from './components/right/Right';
+import { Left } from './components/left/Left.tsx';
+import { Right } from './components/right/Right.tsx';
 import { MantineRef } from './components/mantineref/MantineRef';
 import classes from './app.module.css';
 import '@mantine/core/styles.css';

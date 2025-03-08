@@ -1,9 +1,7 @@
+import React from 'react'
 import { Group, Tooltip } from "@mantine/core"
 import classes from './styles/Left.module.css'
-import {
-  IconBrandGithub,
-  IconBrandLinkedin,
-} from '@tabler/icons-react'
+import { IconBrandGithub, IconBrandLinkedin } from '@tabler/icons-react'
 
 
 export function SocialLinks() {

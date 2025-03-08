@@ -1,6 +1,6 @@
 import classes from './styles/Experience.module.css';
 import { Flex, Text, Pill } from '@mantine/core';
-import { experience } from './experience.ts';
+import { experience } from './data/experience.ts';
 import { IconArrowUpRight } from '@tabler/icons-react';
 
 export function Experience() {

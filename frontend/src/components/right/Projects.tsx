@@ -1,6 +1,6 @@
 import classes from './styles/Projects.module.css';
 import { Flex, Text, Pill, Image } from '@mantine/core';
-import { projects } from './projects.ts';
+import { projects } from './data/projects.ts';
 import { IconArrowUpRight } from '@tabler/icons-react';
 
 export function Projects() {
