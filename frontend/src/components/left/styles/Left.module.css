@@ -32,3 +32,9 @@
     line-height: 0;
     opacity: 0.8;
 }
+
+.tagline {
+    text-transform: uppercase;
+    font-family: 'Space Mono', monospace;
+    transition: all 0.3s ease;
+}
