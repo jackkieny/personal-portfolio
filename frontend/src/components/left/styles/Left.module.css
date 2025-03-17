@@ -8,7 +8,8 @@
     height: 100%;
 }
 
-.sociallink, .sociallink:visited {
+.sociallink,
+.sociallink:visited {
     display: grid;
     place-items: center;
     width: 50px;
@@ -37,4 +38,40 @@
     text-transform: uppercase;
     font-family: 'Space Mono', monospace;
     transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 1100px) {
+    .container {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .title {
+        font-size: 2.5rem;
+        /* Slightly bigger */
+        padding: 10px;
+        /* Add padding */
+        text-align: center;
+        /* Center align */
+    }
+
+    .subtitle {
+        font-size: 1.5rem;
+        /* Slightly bigger */
+        padding: 5px;
+        /* Add padding */
+        text-align: center;
+        /* Center align */
+    }
+
+    .sociallink,
+    .sociallink:visited {
+        margin: 0 auto;
+        /* Center the social icons */
+    }
+
+    .tagline {
+        padding-left: 10px;
+    }
 }

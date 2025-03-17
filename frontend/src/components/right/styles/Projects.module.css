@@ -30,7 +30,7 @@
 }
 
 .right {
-    width: 70%;
+    width: 75%;
     height: 100%;
     display: flex;
 }
@@ -43,4 +43,24 @@
     color: #3aaefe;
     transform: scale(1.5);
     transition: transform 0.5s ease, color 0.2s ease;
+}
+
+@media only screen and (max-width: 767px) {
+    .container {
+        padding-top: 2rem;
+    }
+
+    .paper {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .inner {
+        flex-direction: column;
+    }
+
+    .left,
+    .right {
+        width: 100%;
+    }
 }

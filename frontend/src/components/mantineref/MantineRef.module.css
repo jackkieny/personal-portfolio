@@ -30,7 +30,7 @@
   cursor: pointer;
 }
 
-.icon:hover + .text {
+.icon:hover+.text {
   opacity: 1;
   cursor: pointer;
 }
@@ -40,7 +40,14 @@
   transition: opacity 0.5s ease-in-out;
 }
 
-.link, .link:visited {
+.link,
+.link:visited {
   color: whitesmoke;
   text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    display: none;
+  }
 }

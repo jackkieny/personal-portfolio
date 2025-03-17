@@ -52,3 +52,28 @@
     border-radius: 300px;
     filter: blur(100px);
 }
+
+@media only screen and (max-width: 1100px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left {
+    width: 100%;
+    margin-top: 2rem;
+  }
+
+  .right {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .legend {
+    display: none; /* Hide the legend component */
+  }
+}

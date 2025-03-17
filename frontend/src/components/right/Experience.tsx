@@ -2,8 +2,10 @@ import classes from './styles/Experience.module.css';
 import { Flex, Text, Pill } from '@mantine/core';
 import { experience } from './data/experience.ts';
 import { IconArrowUpRight } from '@tabler/icons-react';
+import { useMediaQuery } from '@mantine/hooks';
 
 export function Experience() {
+  const isMobile = useMediaQuery('(max-width: 1100px)');
 
   const ExpList = experience.map((exp, idx) => {
     return (
@@ -19,11 +21,11 @@ export function Experience() {
       >
         <Flex align='start' gap='md' className={classes.inner}>
 
-          <Flex className={classes.left} w="25%">
+          <Flex className={classes.left}>
             <Text c="dimmed" fz={13}>{exp.start} {`\u2014`} {exp.end}</Text>
           </Flex>
 
-          <Flex className={classes.right} direction='column' w="75%">
+          <Flex className={classes.right} direction='column'>
             <Text fz={18} fw={700}>{exp.position} <IconArrowUpRight size={16} className={classes.icon} /></Text>
             <Text fz={16} c="dimmed">{exp.company}</Text>
             <Text fz={14}>{exp.description}</Text>
@@ -32,7 +34,7 @@ export function Experience() {
                 return (
                   <Pill
                     key={idx}
-                    fz={15}
+                    fz={isMobile ? 12 : 15}
                     c={'#A3B0BE'}
                     bg={'#202C39'}
                     className={classes.pill}
@@ -49,7 +51,7 @@ export function Experience() {
   return (
     <div className={classes.container} id='experience'>
       {ExpList}
-      <Flex gap={20} justify='flex-start' mb={50}>
+      <Flex gap={20} justify='flex-start' mb={50} className={classes.links}>
         <Text fz={16} className={classes.links}>
           <a
             href="/resume.pdf"
@@ -58,7 +60,7 @@ export function Experience() {
             className={classes.link}
           >View Full Résumé
           </a>
-          <IconArrowUpRight size={16} className={classes.icon}/>
+          <IconArrowUpRight size={16} className={classes.icon} />
         </Text>
         <Text fz={16} className={classes.links}>
           <a
