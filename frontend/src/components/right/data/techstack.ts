@@ -1,48 +1,44 @@
 export const frontend = [
-  // { 
-  //   name: 'JavaScript', 
-  //   url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg' 
-  // },
-  { 
+  {
     title: 'Frontend',
-    name: 'TypeScript', 
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg' 
+    name: 'TypeScript',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg'
   },
-  { 
-    name: 'React JS', 
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg' 
+  {
+    name: 'React JS',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg'
   },
-  { 
-    name: 'Tailwind CSS', 
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg' 
+  {
+    name: 'Tailwind CSS',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'
   },
 ]
 
 export const backend = [
-  { 
-    title: 'Backend', 
-    name: 'C#', 
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg' 
+  {
+    title: 'Backend',
+    name: 'C#',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg'
   },
-  { 
-    name: 'Java', 
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg' 
+  {
+    name: 'Java',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg'
   },
-  { 
-    name: 'Go', 
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg' 
+  {
+    name: 'Go',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg'
   },
-  { 
-    name: 'Python', 
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg' 
+  {
+    name: 'Python',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg'
   },
 ]
 
 export const database = [
-  { 
-    title: 'Data & Infrastructure', 
-    name: 'SQL', 
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg' 
+  {
+    title: 'Data & Infrastructure',
+    name: 'SQL',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg'
   },
   {
     name: 'Microsoft Azure',
@@ -52,9 +48,9 @@ export const database = [
     name: 'Microsoft SQL Server',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg',
   },
-  { 
-    name: 'MongoDB', 
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg' 
+  {
+    name: 'MongoDB',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg'
   },
   {
     name: 'Git',

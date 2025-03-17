@@ -1,6 +1,7 @@
 import { Flex, Image, SimpleGrid, Text, Tooltip } from "@mantine/core";
 import classes from './styles/TechStack.module.css';
 import { frontend, backend, database } from './data/techstack.ts';
+import { useMediaQuery } from "@mantine/hooks";
 
 interface TechItem {
   name: string;
@@ -9,11 +10,12 @@ interface TechItem {
 }
 
 const renderTechItems = (items: TechItem[]) => {
+  const isMobile = useMediaQuery('(max-width: 1100px)');
   return (
     <>
       <Text fz={20} fw={300}>{items[0].title}</Text>
       <Flex className={classes.card} justify='center' align='center' mih={100} mb={50}>
-        <SimpleGrid cols={4} w='100%'>
+        <SimpleGrid cols={isMobile ? 2 : 4} w='100%'>
           {items.map((item, index) => {
             return (
               <Tooltip key={index} label={item.name} position='bottom' openDelay={300} offset={-10} withArrow arrowSize={10}>

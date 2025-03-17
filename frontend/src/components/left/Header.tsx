@@ -11,7 +11,6 @@ const taglines = [
   "Build, test, ship.",
   "Code that speaks for itself.",
   "Smooth, smart, scalable.",
-  "Web, mobile, desktop, enterprise, you name it.",
   "Pixels to pipelines.",
   "Solutions, not just software.",
   "Efficient, elegant, effective.",
@@ -22,46 +21,44 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 
 export function Header() {
   const [currentTagline, setCurrentTagline] = useState(taglines[0])
-  const [isHovering, setIsHovering] = useState(false)
 
   useEffect(() => {
-    if (!isHovering) return
-
-    let index = taglines.indexOf(currentTagline)
-    let nextIndex = (index + 1) % taglines.length
-    let nextTagline = taglines[nextIndex]
+    let index = 0
     let iteration = 0
+    let nextTagline = taglines[index]
 
-    let intervalId = setInterval(() => {
-      setCurrentTagline(_ => {
-        let newTagline = nextTagline.split('').map((_, idx) => {
-          if (idx < iteration) {
-            return nextTagline[idx]
-          }
-          return letters[Math.floor(Math.random() * 26)]
-        }).join('')
-        iteration += 1 / 3
-        return newTagline
-      })
-    }, 30)
+    const intervalId = setInterval(() => {
+      iteration = 0
+      index = (index + 1) % taglines.length
+      nextTagline = taglines[index]
 
-    setTimeout(() => {
-      clearInterval(intervalId)
-      setCurrentTagline(nextTagline)
-      setIsHovering(false)
-    }, nextTagline.length * 30)
+      const animationInterval = setInterval(() => {
+        setCurrentTagline(_ => {
+          let newTagline = nextTagline.split('').map((_, idx) => {
+            if (idx < iteration) {
+              return nextTagline[idx]
+            }
+            return letters[Math.floor(Math.random() * 26)]
+          }).join('')
+          iteration += 1 / 7
+          return newTagline
+        })
+      }, 30)
+
+      setTimeout(() => {
+        clearInterval(animationInterval)
+        setCurrentTagline(nextTagline)
+      }, nextTagline.length * 30 * 7)
+    }, 5000)
 
     return () => clearInterval(intervalId)
-  }, [isHovering])
+  }, [])
 
   return (
     <Flex direction='column'>
       <h1 className={classes.title}>Jack Kieny</h1>
       <h3 className={classes.subtitle}>Software Engineer</h3>
-      <p 
-        onMouseEnter={() => setIsHovering(true)}
-        className={classes.tagline}
-      >
+      <p className={classes.tagline}>
         {currentTagline}
       </p>
       <Group mt={30}>
