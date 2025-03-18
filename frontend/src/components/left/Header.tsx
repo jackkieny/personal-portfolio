@@ -33,14 +33,14 @@ export function Header() {
       nextTagline = taglines[index]
 
       const animationInterval = setInterval(() => {
-        setCurrentTagline(_ => {
-          let newTagline = nextTagline.split('').map((_, idx) => {
+        setCurrentTagline(() => {
+          const newTagline = nextTagline.split('').map((_, idx) => {
             if (idx < iteration) {
               return nextTagline[idx]
             }
             return letters[Math.floor(Math.random() * 26)]
           }).join('')
-          iteration += 1 / 7
+          iteration += 1 / 3
           return newTagline
         })
       }, 30)
@@ -48,7 +48,7 @@ export function Header() {
       setTimeout(() => {
         clearInterval(animationInterval)
         setCurrentTagline(nextTagline)
-      }, nextTagline.length * 30 * 7)
+      }, nextTagline.length * 30 * 3)
     }, 5000)
 
     return () => clearInterval(intervalId)
