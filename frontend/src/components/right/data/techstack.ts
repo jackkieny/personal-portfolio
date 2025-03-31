@@ -36,33 +36,45 @@ export const backend = [
 
 export const database = [
   {
-    title: 'Data & Infrastructure',
+    title: 'Database',
     name: 'SQL',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg'
-  },
-  {
-    name: 'Microsoft Azure',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
-  },
-  {
-    name: 'Microsoft SQL Server',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg',
   },
   {
     name: 'MongoDB',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg'
   },
   {
-    name: 'Git',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+    name: 'Microsoft SQL Server',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg',
+  },
+  {
+    name: 'Supabase',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/supabase/supabase-original.svg'
+  },
+]
+
+export const infrastructure = [
+  {
+    title: 'Cloud & Infrastructure',
+    name: 'Microsoft Azure',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
   },
   {
     name: 'Amazon Web Services',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-original-wordmark.svg',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
   },
   {
     name: 'Docker',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-plain-wordmark.svg',
+  },
+  {
+    name: 'Git',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
+  },
+  {
+    name: 'GitHub Actions',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg',
   },
   {
     name: 'Kubernetes',
