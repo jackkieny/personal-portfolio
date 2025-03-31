@@ -1,6 +1,6 @@
 import { Flex, Image, SimpleGrid, Text, Tooltip } from "@mantine/core";
 import classes from './styles/TechStack.module.css';
-import { frontend, backend, database } from './data/techstack.ts';
+import { frontend, backend, database, infrastructure } from './data/techstack.ts';
 import { useMediaQuery } from "@mantine/hooks";
 
 interface TechItem {
@@ -34,9 +34,10 @@ const renderTechItems = (items: TechItem[]) => {
 export function TechStack() {
   return (
     <Flex id='techstack' direction='column' gap='md' w='100%' pt='6rem'>
-      {renderTechItems(frontend)}
       {renderTechItems(backend)}
       {renderTechItems(database)}
+      {renderTechItems(infrastructure)}
+      {renderTechItems(frontend)}
     </Flex>
   );
 }
