@@ -39,7 +39,7 @@ export function Summary() {
         of the data warehouse team. Here I was able to utilize
         my technical skills and gained valuable experience utilizing{" "}
         <span className={classes.highlight}>SQL, C#, VB.Net, & Microsoft Azure</span>.
-        Beyond this, I also have a background in developement
+        Beyond this, I also have a background in development
         with <span className={classes.highlight}> Java, Python, Go, & React</span>.
       </p>
 
