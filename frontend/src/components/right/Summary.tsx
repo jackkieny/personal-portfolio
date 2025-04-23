@@ -6,7 +6,7 @@ export function Summary() {
       <p>
         I am a software engineer with enthusiasm for
         building efficient and scalable applications.
-        My passion for techonology and software development
+        My passion for technology and software development
         comes from my desire to make things faster and easier
         for both users and other developers.
       </p>
@@ -20,7 +20,7 @@ export function Summary() {
         <span className={classes.highlight}>develop solutions </span>
         that enhance user experiences. My adaptability and eagerness to
         learn enable me to quickly grasp new technologies and contribute
-        effectively to a variety of projects. 
+        effectively to a variety of projects.
       </p>
 
       <p>
