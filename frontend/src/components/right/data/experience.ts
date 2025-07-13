@@ -1,8 +1,17 @@
 export const experience = [
     {
+        company: 'Midland\'s Choice',
+        position: 'Software Developer',
+        start: 'JUL 2025',
+        end: 'PRESENT',
+        description: '',
+        tools: ['C#', '.NET', 'Blazor', 'Angular', 'Azure'],
+        link: 'https://www.midlandschoice.com/',
+    },
+    {
         company: 'National Indemnity Company',
         position: 'SQL Developer',
-        start: '2023',
+        start: 'JUN 2023',
         end: 'DEC 2024',
         description: 'Managed and maintained 15+ enterprise-wide applications, optimizing SQL queries and stored procedures for enhanced performance. Supported ETL processes to ensure accurate and efficient data integration within data warehouse applications. Worked collaboratively in an Agile Scrum environment to deliver high-quality solutions on schedule.',
         tools: ['C#', 'Visual Basic', '.NET', 'SQL', 'Azure'],

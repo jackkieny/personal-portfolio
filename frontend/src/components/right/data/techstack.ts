@@ -1,16 +1,20 @@
 export const frontend = [
   {
     title: 'Frontend',
-    name: 'TypeScript',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg'
+    name: 'Angular',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg'
+  },
+  {
+    name: 'Blazor',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg'
   },
   {
     name: 'React JS',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg'
   },
   {
-    name: 'Tailwind CSS',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg'
+    name: 'TypeScript',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg'
   },
 ]
 
@@ -21,12 +25,12 @@ export const backend = [
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg'
   },
   {
-    name: 'Java',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg'
-  },
-  {
     name: 'Go',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/go/go-original-wordmark.svg'
+  },
+  {
+    name: 'Java',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original-wordmark.svg'
   },
   {
     name: 'Python',
