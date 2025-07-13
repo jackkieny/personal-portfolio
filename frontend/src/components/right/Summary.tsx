@@ -4,7 +4,7 @@ export function Summary() {
   return (
     <div className={classes.content}>
       <p>
-        I’m driven by a desire to create efficient, scalable applications that simplify tasks for users and developers. I’m seeking a full-time role where I can collaborate with others to build solutions that address <span className={classes.highlight}>real-world challenges</span> and <span className={classes.highlight}>improve user experiences</span>. My adaptability and eagerness to learn help me quickly pick up new technologies and contribute to diverse projects.
+        I’m driven by a desire to create efficient, scalable applications that simplify tasks for users and developers. I seek an environment where I can collaborate with others to build solutions that address <span className={classes.highlight}>real-world challenges</span> and <span className={classes.highlight}>improve user experiences</span>. My adaptability and eagerness to learn help me quickly pick up new technologies and contribute to diverse projects.
       </p>
 
       <p>
@@ -17,7 +17,7 @@ export function Summary() {
         , where I was a part
         of the data warehouse team. Here I was able to utilize
         my technical skills and gained valuable experience utilizing{" "}
-        <span className={classes.highlight}>SQL, C#, VB.Net, & Microsoft Azure</span>.
+        <span className={classes.highlight}>SQL, C# & Microsoft Azure</span>.
         Beyond this, I also have a background in development
         with <span className={classes.highlight}> Java, Go, Python, & React</span>.
       </p>
