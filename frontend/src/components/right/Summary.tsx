@@ -23,7 +23,7 @@ export function Summary() {
       </p>
 
       <p>
-        When I am not coding, I enjoy spending time with my family, snowboarding, playing guitar, solving puzzles, and{" "}
+        When I am not coding, I enjoy spending time with my family, golfing, snowboarding, playing guitar, solving puzzles, and{" "}
         <span>
           <a className={`${classes.link} ${classes.highlight}`} href="https://duolingo.com/profile/jackkieny" target="_blank" rel="noreferrer">
             learning new languages

@@ -1,16 +1,16 @@
 export const frontend = [
   {
-    title: 'Frontend',
-    name: 'Angular',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg'
-  },
-  {
     name: 'Blazor',
+    title: 'Frontend',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg'
   },
   {
     name: 'React JS',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg'
+  },
+  {
+    name: 'Angular',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg'
   },
   {
     name: 'TypeScript',
@@ -45,12 +45,12 @@ export const database = [
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg'
   },
   {
-    name: 'MongoDB',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg'
-  },
-  {
     name: 'Microsoft SQL Server',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg',
+  },
+  {
+    name: 'MongoDB',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-plain-wordmark.svg'
   },
   {
     name: 'Supabase',
@@ -65,8 +65,8 @@ export const infrastructure = [
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg',
   },
   {
-    name: 'Amazon Web Services',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg',
+    name: 'Azure DevOps',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuredevops/azuredevops-original.svg',
   },
   {
     name: 'Docker',
@@ -75,13 +75,5 @@ export const infrastructure = [
   {
     name: 'Git',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg',
-  },
-  {
-    name: 'GitHub Actions',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/githubactions/githubactions-original.svg',
-  },
-  {
-    name: 'Kubernetes',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/kubernetes/kubernetes-plain-wordmark.svg',
   },
 ]
