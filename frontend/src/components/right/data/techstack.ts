@@ -5,12 +5,12 @@ export const frontend = [
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/blazor/blazor-original.svg'
   },
   {
-    name: 'React JS',
-    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg'
-  },
-  {
     name: 'Angular',
     url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/angular/angular-original.svg'
+  },
+  {
+    name: 'React JS',
+    url: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg'
   },
   {
     name: 'TypeScript',
