@@ -4,31 +4,32 @@ export function Summary() {
   return (
     <div className={classes.content}>
       <p>
-        I’m driven by a desire to create efficient, scalable applications that simplify tasks for users and developers. I seek an environment where I can collaborate with others to build solutions that address <span className={classes.highlight}>real-world challenges</span> and <span className={classes.highlight}>improve user experiences</span>. My adaptability and eagerness to learn help me quickly pick up new technologies and contribute to diverse projects.
+        Hi, I’m Jack! I enjoy building things that make life easier for users and developers alike. I love collaborating with others to solve real-world problems and create enjoyable user experiences. I'm adaptable and always eager to learn, which allows me to pick up new technologies quickly and dive into all kinds of projects with confidence.
       </p>
 
       <p>
-        In the past, I worked as a developer at{" "}
+        I’m currently a software developer at{" "}
         <span className={classes.highlight}>
-          <a className={classes.link} href="#experience" target="_parent" rel="noreferrer">
-            National Indemnity Company
-          </a>
+          <a className={classes.link} href="#experience" target="_parent" rel="noreferrer">Midlands Choice</a>
         </span>
-        , where I was a part
-        of the data warehouse team. Here I was able to utilize
-        my technical skills and gained valuable experience utilizing{" "}
-        <span className={classes.highlight}>SQL, C# & Microsoft Azure</span>.
-        Beyond this, I also have a background in development
-        with <span className={classes.highlight}> Java, Go, Python, & React</span>.
+        , a regional preferred provider organization for healthcare and insurance, working as a full-stack developer on internal tools with{" "}
+        <span className={classes.highlight}>Blazor & C#/.NET</span>
+        . We're a small team, so I touch everything from frontend to backend, APIs and databases.
       </p>
 
       <p>
-        When I am not coding, I enjoy spending time with my family, golfing, snowboarding, playing guitar, solving puzzles, and{" "}
-        <span>
-          <a className={`${classes.link} ${classes.highlight}`} href="https://duolingo.com/profile/jackkieny" target="_blank" rel="noreferrer">
-            learning new languages
-          </a>
-        </span>.
+        Before that, I worked as a SQL developer at{" "}
+        <span className={classes.highlight}>
+          <a className={classes.link} href="#experience" target="_parent" rel="noreferrer">National Indemnity Company</a>
+        </span>
+        {" "} on the data warehouse team, where I built hands-on experience with{" "}
+        <span className={classes.highlight}>SQL, Visual Basic & Microsoft Azure</span>.
+        I also have a background in{" "}
+        <span className={classes.highlight}>Java, Go, Python & React</span>.
+      </p>
+
+      <p>
+        When I am not coding, I enjoy spending time with my family, golfing, snowboarding, playing guitar, solving puzzles, and learning new languages.
       </p>
     </div>
   )

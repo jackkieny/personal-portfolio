@@ -1,5 +1,13 @@
 export const projects = [
     {
+        image: '/homelab.png',
+        name: 'Home Lab',
+        description: 'Self-hosted infrastructure running on Proxmox VE. Authentik provides SSO across services behind a reverse proxy with Cloudflare Tunnel exposure. Hosting a cloud storage suite (Nextcloud, Immich) and a media server (the ARR stack) alongside other self-hosted apps.',
+        year: `2026`,
+        link: '',
+        tools: ['Proxmox', 'Docker', 'Authentik', 'Traefik'],
+    },
+    {
         image: '/ci.png',
         name: 'Community Insights',
         description: 'Designed and developed a full-stack React application with a Go-based web server and MongoDB database. Platform designed to enable Skool community owners to schedule and manage posts. Built custom APIs for authentication, session key management, and data retrieval systems, ensuring secure and efficient user interactions.',
