@@ -4,7 +4,7 @@ export const experience = [
         position: 'Software Developer',
         start: 'JUL 2025',
         end: 'PRESENT',
-        description: '',
+        description: 'Built and maintained a company portal for managing contacts and supporting internal processes. Designed and integrated APIs while modernizing legacy systems to Blazor and Angular on .NET framework. Built SQL Server database and reporting solutions to support business operations.',
         tools: ['C#', '.NET', 'Blazor', 'Angular', 'Azure'],
         link: 'https://www.midlandschoice.com/',
     },
