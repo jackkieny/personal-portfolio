@@ -1,13 +1,14 @@
 # View Site: [https://jackkieny.com](https://jackkieny.com)
 
 # About Me
-Full stack software engineer just trying to get a job
+Full-stack software engineer 
 
 # About This Site
 Host: Linode (for now)
 
 # Inspiration & References
-I took inspiration for this portfoilo from multiple different sources. I've tried to list them all here so you can check them out for yourself.
+I took inspiration for this portfolio from multiple different sources.
+I've listed them all here so you can check them out for yourself.
 
 | Feature | Author | Link|
 | --- | --- | --- |
